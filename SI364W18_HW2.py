@@ -88,7 +88,7 @@ def album_result():
         score = form.score.data
     
     return render_template('album_data.html', album_name=album_name, score=score)
-    flash(form.errors)
+    # flash(form.errors)
 
 
 

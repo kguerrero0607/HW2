@@ -2,6 +2,7 @@
 
 <body>
     <form action='{{url_for('album_result')}}' method='POST'>
+        {{ form.hidden_tag() }}
         {{ form.album_name.label }}{{ form.album_name() }} <br>
         {{ form.score.label }}{{ form.score() }} <br>
         {{ form.submit() }} <br>
